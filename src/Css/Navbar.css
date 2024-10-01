@@ -1,0 +1,14 @@
+
+.navegar{
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-link:hover{
+ 
+  border-bottom: #C96868 solid 1px;
+
+
+}
+.navbar{
+    height: 60px;
+}
