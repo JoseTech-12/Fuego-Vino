@@ -14,6 +14,7 @@ import persona from "../assets/persona1.jpg"
 import persona1 from "../assets/persona2.jpg"
 import persona2 from "../assets/persona3.jpg"
 import ubicacion from "../assets/ubicacion.jpg"
+import reservas from "../assets/reservas.png";
 
 
 const Principal = () => {
@@ -87,6 +88,45 @@ const Principal = () => {
 
                         Te invitamos a visitar nuestra página web, donde podrás explorar nuestro menú completo y hacer tu reserva de manera rápida y sencilla. ¡No dejes pasar la oportunidad de disfrutar de una velada única en Fuego & Vino! ¡Te estamos esperando!</p>
                 </div>
+            </section>
+            <hr />
+
+            <section className="servicios">
+                <h2 className="titulo-seccion">Nuestros servicios</h2>
+                <div className="servicio">
+                    <div className="contenedor-servicio">
+                        <div >
+                            <h4>¡Reserva tu mesa en Fuego y Vino hoy mismo!</h4>
+                            <p>No te quedes sin vivir la mejor experiencia gastronómica en Fuego y Vino, donde el sabor de la parrilla y los mejores vinos se fusionan para brindarte una velada inolvidable.</p>
+
+                            <p>📅 Reserva fácil y rápido a través de nuestra página web. Garantiza tu lugar y disfruta de un ambiente acogedor con lo mejor de nuestra cocina y vinos seleccionados.</p>
+                            <a href="./Login" className="btn boton-reservar">Realizar Reserva</a>
+                        </div>
+                        <div className="conten-datos-servicios">
+                            <img src={reservas} alt="" />
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div className="servicio">
+                    <div className="contenedor-servicio">
+                        <div >
+                            <h4>Celebra tus momentos más especiales en Fuego & Vino!</h4>
+                            <p>¿Tienes un aniversario, cumpleaños o cualquier ocasión especial? En <strong>Fuego & Vino</strong>, convertimos cada celebración en una experiencia inolvidable. Déjanos ser parte de esos momentos únicos con nuestra exquisita cocina, vinos selectos y un ambiente cálido y acogedor.</p>
+
+                            <p>🎂 Reserva tu evento y deja que nos encarguemos de todo, desde una cena íntima hasta una gran celebración. Personalizamos cada detalle para que solo tengas que preocuparte por disfrutar.</p>
+                            <a href="./Login" className="btn boton-reservar">Reservar Evento</a>
+                        </div>
+                        <div className="conten-datos-servicios">
+                            <img src={reservas} alt="" />
+
+                        </div>
+
+                    </div>
+                </div>
+
             </section>
             <hr />
             <section className="menus" id="menu">
@@ -168,7 +208,7 @@ const Principal = () => {
 
 
             </section>
-
+            <hr />
             <section className="reseña" id="reseña">
                 <div>
                     <h2 className="titulo-seccion" >Reseñas</h2>
@@ -212,7 +252,7 @@ const Principal = () => {
                 </div>
             </section>
 
-
+            <hr />
             <section className="formulario-principal">
                 <h2 className="titulo-seccion" >Contactanos</h2>
                 <div className="contenido-formulario">
@@ -225,7 +265,8 @@ const Principal = () => {
                         <input className="inputs-principal" type="text" placeholder="ingrese nombre" />
                         <input className="inputs-principal" type="email" placeholder="ingrese email" />
                         <input className="inputs-principal" type="number" placeholder="ingrese telefono" />
-                        <textarea name="" id="" placeholder="ingrese mensaje" rows={4} ></textarea>
+                        <textarea name="" id="" placeholder="ingrese mensaje"  ></textarea>
+                        <input className="btn" type="submit" />
                     </form>
                 </div>
 

@@ -153,7 +153,7 @@ margin: 10px auto;
     }
 }
 
-.Ubicacion, .menus, .reseña, .formulario-principal{
+.Ubicacion, .menus, .reseña, .formulario-principal,.servicios{
     view-timeline-name: --imagen;
     view-timeline-axis: block;
      
@@ -169,10 +169,12 @@ margin: 10px auto;
 
 
 .formulario-principal{
+  
     display: flex;
     flex-direction: column;
     width: 70%;
    margin: 50px auto;
+   gap: 20px;
   
 }
 .contenido-formulario{
@@ -200,4 +202,41 @@ textarea{
 }
 .contenido-texto-formulario{
     width: 50%;
+}
+
+/* servicios*/
+
+
+.servicios{
+    width: 80%;
+    display: flex;
+    margin: 20px auto;
+     flex-direction: column;
+   
+}
+.contenedor-servicio{
+    display: flex;
+    gap: 30px;
+
+}
+
+.conten-datos-servicios img{
+    width: 500px;
+    height: 300px;
+    border-radius: 13px;
+
+}
+.conten-datos-servicios img:hover{
+    transform: scale(1.01);
+}
+.servicio{
+    background-color: #FADFA1;
+    padding: 30px;
+    border-radius: 13px;
+    margin: 20px;
+
+}
+.boton-reservar{
+    background-color: #C96868 !important;
+    color: white !important;
 }
