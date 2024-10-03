@@ -21,9 +21,7 @@ const Login = () => {
             <div class="crearcuenta">
               ¿No tienes una cuenta? <a href="./CrearCuenta">Crear cuenta</a>
             </div>
-            <div class="regreso">
-              <a href="index.html" class="btn-regresar">Regresar a la Página Principal</a>
-            </div>
+           
           </div>
         </div>
 
