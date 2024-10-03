@@ -15,7 +15,7 @@ import persona1 from "../assets/persona2.jpg"
 import persona2 from "../assets/persona3.jpg"
 import ubicacion from "../assets/ubicacion.jpg"
 import reservas from "../assets/reservas.png";
-
+import Cumpleaños from "../assets/Cumpleaños.jpg"
 
 const Principal = () => {
 
@@ -120,7 +120,7 @@ const Principal = () => {
                             <a href="./Login" className="btn boton-reservar">Reservar Evento</a>
                         </div>
                         <div className="conten-datos-servicios">
-                            <img src={reservas} alt="" />
+                            <img src={Cumpleaños} alt="" />
 
                         </div>
 
