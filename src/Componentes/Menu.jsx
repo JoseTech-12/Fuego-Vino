@@ -12,7 +12,7 @@ const Menu = () => {
         </button>
         <div className="collapse navegar navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
-
+            <a className="nav-link active" aria-current="page" href="/">Inicio</a>
             <a className="nav-link active" aria-current="page" href="./login">Reservas</a>
             <a className="nav-link active" aria-current="page" href="menu">Menú</a>
             <a className="nav-link active" aria-current="page" href="#acerca-de">Acerca de</a>

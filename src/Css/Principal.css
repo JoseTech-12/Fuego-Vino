@@ -153,7 +153,7 @@ margin: 10px auto;
     }
 }
 
-.Ubicacion, .menus, .reseña{
+.Ubicacion, .menus, .reseña, .formulario-principal{
     view-timeline-name: --imagen;
     view-timeline-axis: block;
      
