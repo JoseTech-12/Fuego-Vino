@@ -11,9 +11,9 @@ import filete from "../assets/filete.jpg"
 import lubia from "../assets/lubia.jpeg"
 import trufas from "../assets/trufas.jpg"
 import persona from "../assets/persona1.jpg"
-import califacion from "../assets/calificacion.png"
 import persona1 from "../assets/persona2.jpg"
 import persona2 from "../assets/persona3.jpg"
+import ubicacion from "../assets/ubicacion.jpg"
 
 
 const Principal = () => {
@@ -144,14 +144,32 @@ const Principal = () => {
                     </div>
                 </div>
                 <div className="mt-auto verMas">
-                    <button className="btn btn-primary botonVermas" onClick={HandleVerMasClick}>
+                    <button className="botonVermas" onClick={HandleVerMasClick}>
                         {verMas ? 'Ver menos' : 'Ver más'}
                     </button>
                 </div>
+
             </section>
             <hr />
 
-            <section id="reseña">
+            <section className="Ubicacion">
+                <h2 className="titulo-seccion">Visitanos</h2>
+                <div className="ubicacion-contenido">
+                    <div>
+                        <h4>¡Descubre la experiencia única en Fuego y Vino!</h4>
+                        <p>Te invitamos a disfrutar de lo mejor de la parrilla y los vinos más selectos en un ambiente acogedor y vibrante. En Fuego y Vino, combinamos sabores ahumados y especias irresistibles con una selección exclusiva de vinos que harán que tu visita sea inolvidable.</p>
+
+                        <p>📍 Encuéntranos en la Calle del Sabor #123, Barrio Gourmet, Medellín.</p>
+
+                        <p>¡Ven con amigos o en pareja, y déjate llevar por el fuego de los sabores! No olvides reservar tu mesa para vivir una experiencia que encenderá todos tus sentidos.🔥✨</p>
+                    </div>
+                    <img className="imagen-ubicacion" src={ubicacion} alt="" />
+                </div>
+
+
+            </section>
+
+            <section className="reseña" id="reseña">
                 <div>
                     <h2 className="titulo-seccion" >Reseñas</h2>
                     <div className="contenedor-reseña">
@@ -163,7 +181,7 @@ const Principal = () => {
                                     <p>Isaac Gomez</p>
                                     <p>¡Una experiencia inolvidable! La comida estuvo espectacular, llena de sabores auténticos y bien presentados. El ambiente es acogedor y el servicio de primera, siempre atentos a cada detalle. Definitivamente, uno de los mejores restaurantes que he visitado. ¡Recomendado al 100%!</p>
                                 </div>
-                                <div><img src={califacion} alt="" /></div>
+
                             </div>
                         </div>
                         <div className="reseña1">
@@ -174,7 +192,7 @@ const Principal = () => {
                                     <p>Cristian Alvarez</p>
                                     <p>Ambiente acogedor, comida increíble y un servicio impecable. ¡Totalmente recomendable!</p>
                                 </div>
-                                <div><img src={califacion} alt="" /></div>
+
                             </div>
                         </div>
                         <div className="reseña1">
@@ -185,7 +203,7 @@ const Principal = () => {
                                     <p>Jose Parra</p>
                                     <p>Excelente atención y comida deliciosa. Cada plato fue una sorpresa de sabor. ¡Volveré pronto!</p>
                                 </div>
-                                <div><img src={califacion} alt="" /></div>
+
                             </div>
                         </div>
 
@@ -193,6 +211,26 @@ const Principal = () => {
                     </div>
                 </div>
             </section>
+
+
+            <section className="formulario-principal">
+                <h2 className="titulo-seccion" >Contactanos</h2>
+                <div className="contenido-formulario">
+                    <div className="contenido-texto-formulario">
+                        <h4>¡Nos encantaría saber de ti!
+                        </h4>
+                        <p>En Fuego y Vino, siempre estamos atentos a tus comentarios, preguntas o sugerencias. Completa el siguiente formulario y nos pondremos en contacto contigo lo antes posible. ¡Gracias por elegirnos para tu próxima experiencia gastronómica!</p>
+                    </div>
+                    <form action="" className="form-principal">
+                        <input className="inputs-principal" type="text" placeholder="ingrese nombre" />
+                        <input className="inputs-principal" type="email" placeholder="ingrese email" />
+                        <input className="inputs-principal" type="number" placeholder="ingrese telefono" />
+                        <textarea name="" id="" placeholder="ingrese mensaje" rows={4} ></textarea>
+                    </form>
+                </div>
+
+            </section>
+
         </div>
 
 
